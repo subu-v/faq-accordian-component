@@ -1,2 +1,3 @@
-To visit this project, it is deployed using netlify free hosting.
+To visit this project, click the link
+
 https://subhus-faq-accordian-componene.netlify.app/
