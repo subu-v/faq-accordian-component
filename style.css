@@ -90,7 +90,7 @@ body {
   border: none;
   background: transparent;
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 1.4rem;
   font-family: inherit;
 
@@ -109,7 +109,7 @@ body {
 
   display: block;
   width: 1rem;
-  height: 1.2rem;
+  height: 1.4rem;
 
   transition: all 0.3s ease;
 }
@@ -123,10 +123,6 @@ body {
   transform: rotate(180deg);
 }
 
-.accordian__collapse {
-  /* transition: all 3s ease; */
-}
-
 .accordian__collapse.collapse {
   display: none;
 }
@@ -137,7 +133,7 @@ body {
 
 .accordian__content {
   color: var(--text-grayish-darkblue);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1.4rem;
 }
