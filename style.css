@@ -28,13 +28,17 @@ body {
   );
   font-family: "Kumbh Sans", sans-serif;
   min-height: 100vh;
-  padding: 3rem;
+  padding: 16rem 1.6rem;
 }
 
 .card {
   background-color: #fff;
   border-radius: 2rem;
   max-width: 90rem;
+  background-image: url(images/bg-pattern-mobile.svg);
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-size: 24rem;
 }
 
 .card__box {
@@ -45,28 +49,47 @@ body {
   position: relative;
 }
 
-.card__image img {
+.card__image--mobile {
+  display: block;
   width: 100%;
   height: auto;
-  max-width: 15rem;
+  max-width: 24rem;
+
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: -11rem;
   transform: translateX(-50%);
 }
 
-.card__text {
-  padding-top: 8rem;
+.card__image--desktop {
+  display: none;
 }
 
+.card__text {
+  padding-top: 11rem;
+}
+
+/* .accordian__item {
+  border-bottom: 1px solid var(--divider-blue);
+}
+
+.accordian__question {
+  border: none;
+  background: transparent;
+  font-size: 1.3rem;
+} */
+
 @media (min-width: 56em) {
+  body {
+    padding: 8rem;
+  }
+
   .card {
     display: flex;
-    margin: 6rem auto;
+    margin: 0 auto;
 
     background-image: url(images/bg-pattern-desktop.svg);
     background-position: -14% center;
-    background-repeat: no-repeat;
     background-size: 45%;
 
     position: relative;
@@ -96,7 +119,13 @@ body {
     overflow: hidden;
   }
 
-  .card__image img {
+  .card__image--mobile {
+    display: none;
+  }
+
+  .card__image--desktop {
+    display: block;
+    position: initial;
     transform: translateX(-6.4rem);
     max-width: 40rem;
   }
