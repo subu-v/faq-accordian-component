@@ -28,4 +28,80 @@ body {
   );
   font-family: "Kumbh Sans", sans-serif;
   min-height: 100vh;
+  padding: 3rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2rem;
+  max-width: 90rem;
+}
+
+.card__box {
+  display: none;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image img {
+  width: 100%;
+  height: auto;
+  max-width: 15rem;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+}
+
+.card__text {
+  padding-top: 8rem;
+}
+
+@media (min-width: 56em) {
+  .card {
+    display: flex;
+    margin: 6rem auto;
+
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-position: -14% center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+
+    position: relative;
+  }
+
+  .card__box {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .card__image {
+    padding-right: 3.6rem;
+  }
+
+  .card__image,
+  .card__text {
+    flex: 1;
+  }
+
+  .card__image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card__image img {
+    transform: translateX(-6.4rem);
+    max-width: 40rem;
+  }
+
+  .card__text {
+    padding: 0;
+  }
 }
